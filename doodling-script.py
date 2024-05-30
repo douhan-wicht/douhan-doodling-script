@@ -6,7 +6,7 @@ from PyQt5.QtCore import Qt, QSize, QCoreApplication
 class DoodleCanvas(QWidget):
     def __init__(self):
         super().__init__()
-        self.setWindowTitle('Doodle Canvas')
+        self.setWindowTitle("Douhan's Doodling Script")
         self.canvas_size = (1080, 900)  # Larger canvas size
         self.canvas = QImage(*self.canvas_size, QImage.Format_RGB32)
         self.canvas.fill(Qt.white)
@@ -30,7 +30,7 @@ class DoodleCanvas(QWidget):
 
         # Choose Color button with icon
         self.color_button = QPushButton()
-        self.color_button.setIcon(QIcon("./icons/color_picker.png"))
+        self.color_button.setIcon(QIcon("/home/douhan/Documents/scripts/doodle/icons/color_picker.png"))
         self.color_button.setIconSize(QSize(64, 64))
         self.color_button.setFixedSize(84, 84)
         self.color_button.clicked.connect(self.choose_color)
@@ -38,7 +38,7 @@ class DoodleCanvas(QWidget):
 
         # Eraser Mode button with icon
         self.erase_button = QPushButton()
-        self.erase_button.setIcon(QIcon("./icons/eraser.png"))
+        self.erase_button.setIcon(QIcon("/home/douhan/Documents/scripts/doodle/icons/eraser.png"))
         self.erase_button.setIconSize(QSize(64, 64))
         self.erase_button.setFixedSize(84, 84)
         self.erase_button.clicked.connect(self.toggle_eraser_mode)
@@ -90,7 +90,7 @@ def main():
     window = QMainWindow()
     canvas = DoodleCanvas()
     window.setCentralWidget(canvas)
-    window.setWindowTitle("Doodle Canvas")
+    window.setWindowTitle("Douhan's Doodling Script")
     window.resize(1200, 900)  # Set initial window size
     center_window(window)  # Center the window on the screen
     window.show()
