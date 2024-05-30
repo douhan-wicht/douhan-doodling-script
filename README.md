@@ -17,3 +17,6 @@ Douhan's Doodling Script is a Python application built using PyQt5, allowing use
 2. Ensure you have Python and PyQt5 installed.
 3. Run the script `doodle.py` using Python.
 4. Start doodling and enjoy creating sketches!
+
+## Screenshots
+![](/screenshots/hello-github.png)
